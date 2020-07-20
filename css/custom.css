@@ -1,0 +1,41 @@
+.bg {
+  background: #232526;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #414345, #232526);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #414345, #232526);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+.bg h1 {
+  font-family: "GlacialIndifference";
+  font-weight: bold;
+}
+
+.animate__delay-500ms {
+  animation-delay: 500ms;
+  -webkit-animation-delay: 500ms;
+}
+
+.animate__delay-550ms {
+  animation-delay: 550ms;
+  -webkit-animation-delay: 550ms;
+}
+
+.animate__delay-730ms {
+  animation-delay: 730ms;
+  -webkit-animation-delay: 730ms;
+}
+
+.play {
+  background-color: rgb(100, 100, 100);
+  border-color: rgb(100, 100, 100);
+  text-decoration: line-through;
+}
