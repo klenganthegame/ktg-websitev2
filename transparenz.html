@@ -80,13 +80,23 @@
                 href="https://wa.me/4915678745887">https://wa.me/4915678745887</a> oder 015678/745887)</i>
     </b>
     </p>
+    <p>Bitte gebe folgende Besucher ID an, damit wir dich identifizieren können: <pre id="visitorid" style="background-color: lightgrey; width: 15%; text-align: center; border-radius: 2px"></pre></p>
   </div>
 </div>
 
 
-<div class="bg-light container p-4">
-  <a href="https://legal.nachwahl.dev/imprint.html">Impressum</a> | <a href="https://legal.nachwahl.dev/privacy.html">Datenschutzerklärung</a>
+<div class="bg-light mt-5">
+  <div class="bg-light container p-4">
+    <a href="https://legal.nachwahl.dev/imprint.html">Impressum</a> | <a href="https://legal.nachwahl.dev/privacy.html">Datenschutzerklärung</a>
+  </div>
 </div>
+
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
 
 <!-- Matomo -->
 <script type="text/javascript">
@@ -108,15 +118,17 @@
     g.src = u + 'matomo.js';
     s.parentNode.insertBefore(g, s);
   })();
+
+  _paq.push([ function() {
+    document.getElementById('visitorid').innerHTML = this.getVisitorId();
+  }]);
+
+
 </script>
 <!-- End Matomo Code -->
 
 
-<!-- JS, Popper.js, and jQuery -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+
 <script>
   $('#tooltip').tooltip();
   $('#tooltip2').tooltip();
